@@ -13,7 +13,7 @@ public class Bingo {
         Random random = new Random();
 
 
-        int numUser = 999;
+        int numUser;
         int attempt = 0;
         int number = random.nextInt(101);
 
@@ -24,7 +24,7 @@ public class Bingo {
 
 
 
-            while (numUser != number) {
+            while (true) {
                 attempt++;
                 System.out.print("Попытка №" + attempt + ":");
 
